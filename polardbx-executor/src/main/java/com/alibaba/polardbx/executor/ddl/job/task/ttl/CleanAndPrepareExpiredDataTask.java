@@ -38,7 +38,7 @@ import com.alibaba.polardbx.optimizer.ttl.TtlDefinitionInfo;
 import lombok.Data;
 import lombok.Getter;
 import org.apache.calcite.rel.RelNode;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

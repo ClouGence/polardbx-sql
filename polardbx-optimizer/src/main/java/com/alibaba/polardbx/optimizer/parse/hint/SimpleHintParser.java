@@ -44,7 +44,7 @@ import com.alibaba.polardbx.optimizer.OptimizerContext;
 import com.alibaba.polardbx.optimizer.exception.SqlParserException;
 import com.alibaba.polardbx.optimizer.parse.HintParser;
 import com.alibaba.polardbx.rule.utils.ComparativeStringAnalyser;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.HashSet;
 import java.util.List;

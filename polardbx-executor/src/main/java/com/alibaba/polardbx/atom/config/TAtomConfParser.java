@@ -20,7 +20,7 @@ import com.alibaba.polardbx.common.properties.MppConfig;
 import com.alibaba.polardbx.common.utils.TStringUtil;
 import com.alibaba.polardbx.common.utils.logger.Logger;
 import com.alibaba.polardbx.common.utils.logger.LoggerFactory;
-import org.apache.commons.lang.BooleanUtils;
+import org.apache.commons.lang3.BooleanUtils;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

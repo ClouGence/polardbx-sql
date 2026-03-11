@@ -37,8 +37,8 @@ import com.alibaba.polardbx.rule.utils.SimpleRuleProcessor;
 import com.alibaba.polardbx.rule.utils.sample.Samples;
 import com.alibaba.polardbx.rule.virtualnode.DBTableMap;
 import com.alibaba.polardbx.rule.virtualnode.TableSlotMap;
-import org.apache.commons.lang.ObjectUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.ObjectUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;

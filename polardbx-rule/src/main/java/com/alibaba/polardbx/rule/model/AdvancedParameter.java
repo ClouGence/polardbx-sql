@@ -28,7 +28,7 @@ import com.alibaba.polardbx.rule.utils.AdvancedParameterParser;
 import com.alibaba.polardbx.rule.utils.NoloopCoverRuleProcessor;
 import com.alibaba.polardbx.rule.VirtualTableSupport;
 import com.alibaba.polardbx.rule.utils.GroovyRuleShardFuncFinder;
-import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.util.Calendar;
 import java.util.Date;

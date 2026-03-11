@@ -42,7 +42,7 @@ import org.apache.calcite.sql.SqlPartition;
 import org.apache.calcite.sql.SqlSubPartition;
 import org.apache.calcite.sql.parser.SqlParserPos;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -33,7 +33,7 @@ import org.apache.calcite.rel.externalize.RelDrdsWriter;
 import org.apache.calcite.rel.externalize.RexExplainVisitor;
 import org.apache.calcite.rel.metadata.RelMetadataQuery;
 import org.apache.calcite.rex.RexNode;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -19,7 +19,7 @@ package com.alibaba.polardbx.config;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;

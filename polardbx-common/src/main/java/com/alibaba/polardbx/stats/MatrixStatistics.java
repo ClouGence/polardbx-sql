@@ -17,7 +17,7 @@
 package com.alibaba.polardbx.stats;
 
 import com.alibaba.polardbx.common.utils.thread.NamedThreadFactory;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;

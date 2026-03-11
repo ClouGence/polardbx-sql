@@ -17,7 +17,7 @@
 package com.alibaba.polardbx.manager.handler;
 
 import com.alibaba.polardbx.common.exception.code.ErrorCode;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import com.alibaba.polardbx.CobarServer;
 import com.alibaba.polardbx.manager.ManagerConnection;

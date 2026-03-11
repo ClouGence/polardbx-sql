@@ -49,7 +49,7 @@ import com.alibaba.polardbx.gms.util.PasswdUtil;
 import com.alibaba.polardbx.server.util.StringUtil;
 import com.google.common.base.Splitter;
 import com.google.common.collect.ImmutableList;
-import org.apache.commons.lang.exception.ExceptionUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.hadoop.fs.FileSystem;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -114,8 +114,8 @@ public final class TddlLauncher {
                 System.exit(0);
             } catch (Exception e) {
                 logger.error("Initialize oss failed due to:\n{}",
-                    ExceptionUtils.getFullStackTrace(e));
-                System.err.println("Initialize oss failed due to:\n "+ ExceptionUtils.getFullStackTrace(e));
+                    ExceptionUtils.getStackTrace(e));
+                System.err.println("Initialize oss failed due to:\n "+ ExceptionUtils.getStackTrace(e));
                 System.exit(1);
             }
         }
@@ -137,7 +137,7 @@ public final class TddlLauncher {
                         server.destroy();
                     } catch (Throwable e) {
                         logger.warn("##something goes wrong when stopping tddl server:\n{}",
-                            ExceptionUtils.getFullStackTrace(e));
+                            ExceptionUtils.getStackTrace(e));
                     } finally {
                         logger.info("## tddl server is down.  ");
                     }
@@ -145,7 +145,7 @@ public final class TddlLauncher {
             });
         } catch (Throwable e) {
             logger.error(String.format("## Something goes wrong when starting up the tddl server:\n %s",
-                ExceptionUtils.getFullStackTrace(e)));
+                ExceptionUtils.getStackTrace(e)));
             System.exit(0);
         }
     }

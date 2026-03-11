@@ -25,7 +25,6 @@ import com.alibaba.polardbx.executor.columnar.CSVRow;
 import com.alibaba.polardbx.optimizer.core.datatype.DataType;
 import com.alibaba.polardbx.optimizer.core.field.SessionProperties;
 import com.alibaba.polardbx.optimizer.core.row.Row;
-import org.apache.commons.lang.exception.NestableRuntimeException;
 import org.apache.hadoop.hive.ql.exec.vector.BytesColumnVector;
 import org.apache.hadoop.hive.ql.exec.vector.ColumnVector;
 import org.apache.orc.TypeDescription;
@@ -124,7 +123,7 @@ class BlobColumnProvider implements ColumnProvider<Blob> {
                 ((BytesColumnVector) columnVector).setVal(rowNumber, rawBytes);
                 accumulator.ifPresent(a -> a.appendBytes(rawBytes, 0, rawBytes.length));
             } catch (SQLException t) {
-                throw new NestableRuntimeException(t);
+                throw new RuntimeException(t);
             }
         }
     }

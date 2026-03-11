@@ -25,8 +25,8 @@ import com.alibaba.polardbx.net.util.TimeUtil;
 import com.alibaba.druid.pool.GetConnectionTimeoutException;
 import com.alibaba.polardbx.common.utils.logger.Logger;
 import com.alibaba.polardbx.common.utils.logger.LoggerFactory;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.exception.ExceptionUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 
 import java.io.EOFException;
 import java.nio.channels.SocketChannel;

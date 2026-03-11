@@ -26,7 +26,7 @@ import com.alibaba.polardbx.config.UserConfig;
 import com.alibaba.polardbx.net.handler.Privileges;
 import com.taobao.tddl.common.privilege.EncrptPassword;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Collections;
 import java.util.Map;

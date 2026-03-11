@@ -17,7 +17,7 @@
 package com.alibaba.polardbx.common.model.sqljep;
 
 import com.alibaba.polardbx.common.exception.NotSupportException;
-import org.apache.commons.lang.time.DateFormatUtils;
+import org.apache.commons.lang3.time.DateFormatUtils;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

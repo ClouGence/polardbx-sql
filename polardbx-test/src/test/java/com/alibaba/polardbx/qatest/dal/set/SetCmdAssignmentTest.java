@@ -19,7 +19,7 @@ package com.alibaba.polardbx.qatest.dal.set;
 import com.alibaba.druid.util.JdbcUtils;
 import com.alibaba.polardbx.qatest.DirectConnectionBaseTestCase;
 import com.alibaba.polardbx.qatest.util.JdbcUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

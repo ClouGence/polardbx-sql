@@ -17,7 +17,7 @@
 package com.alibaba.polardbx.common.constants;
 
 import com.alibaba.polardbx.common.utils.ArrayTrie;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.HashSet;
 import java.util.Set;

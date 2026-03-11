@@ -16,7 +16,7 @@
 
 package com.alibaba.polardbx.repo.mysql.checktable;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * 列描述

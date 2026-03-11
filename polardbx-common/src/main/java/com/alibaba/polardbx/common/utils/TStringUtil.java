@@ -17,8 +17,8 @@
 package com.alibaba.polardbx.common.utils;
 
 import com.alibaba.polardbx.common.properties.DynamicConfig;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.math.NumberUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
 
 import java.io.IOException;
 import java.io.StringReader;

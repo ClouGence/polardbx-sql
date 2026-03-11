@@ -23,7 +23,7 @@ import com.alibaba.polardbx.optimizer.core.rel.ReplaceTableNameWithQuestionMarkV
 import com.alibaba.polardbx.optimizer.parse.FastsqlParser;
 import org.apache.calcite.sql.SqlNode;
 import org.apache.calcite.sql.SqlNodeList;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
 import org.junit.Test;
 

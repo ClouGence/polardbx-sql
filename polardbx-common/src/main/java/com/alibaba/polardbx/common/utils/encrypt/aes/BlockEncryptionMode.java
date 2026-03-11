@@ -16,7 +16,7 @@
 
 package com.alibaba.polardbx.common.utils.encrypt.aes;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class BlockEncryptionMode {
     public static final String AES_PREFIX = "aes";

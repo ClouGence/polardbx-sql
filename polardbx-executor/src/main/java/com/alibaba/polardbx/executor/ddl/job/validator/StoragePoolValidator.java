@@ -22,7 +22,7 @@ import com.alibaba.polardbx.executor.ddl.job.factory.storagepool.StoragePoolUtil
 import com.alibaba.polardbx.gms.metadb.MetaDbDataSource;
 import com.alibaba.polardbx.gms.topology.*;
 import com.alibaba.polardbx.optimizer.locality.StoragePoolManager;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 import java.util.HashSet;

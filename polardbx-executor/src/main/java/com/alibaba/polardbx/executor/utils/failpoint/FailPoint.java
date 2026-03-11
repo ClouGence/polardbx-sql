@@ -18,7 +18,7 @@ package com.alibaba.polardbx.executor.utils.failpoint;
 
 import com.alibaba.polardbx.optimizer.context.ExecutionContext;
 import com.google.common.base.Joiner;
-import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
@@ -147,7 +147,7 @@ public class FailPoint {
     public static void injectRandomException(String key) {
         inject(key, (k, v) -> {
             int percentage = Integer.valueOf(v);
-            int val = RandomUtils.nextInt(100);
+            int val = RandomUtils.nextInt(0,100);
             if (val <= percentage) {
                 throw new RuntimeException("injected failure from " + key);
             }
@@ -157,7 +157,7 @@ public class FailPoint {
     public static void injectRandomExceptionFromHint(String key, ExecutionContext executionContext) {
         injectFromHint(key, executionContext, (k, v) -> {
             int percentage = Integer.valueOf(v);
-            int val = RandomUtils.nextInt(100);
+            int val = RandomUtils.nextInt(0,100);
             if (val <= percentage) {
                 throw new RuntimeException("injected failure from " + key);
             }
@@ -173,7 +173,7 @@ public class FailPoint {
             String[] pair = v.replace(" ", "").split(",");
             int percentage = Integer.valueOf(pair[0]);
             int duration = Integer.valueOf(pair[1]);
-            if (RandomUtils.nextInt(100) <= percentage) {
+            if (RandomUtils.nextInt(0,100) <= percentage) {
                 try {
                     Thread.sleep(duration);
                 } catch (Exception ignored) {
@@ -263,7 +263,7 @@ public class FailPoint {
     public static void injectRandomHang() {
         inject(FP_RANDOM_HANG, (k, v) -> {
             int percentage = Integer.valueOf(v);
-            if (RandomUtils.nextInt(100) <= percentage) {
+            if (RandomUtils.nextInt(0,100) <= percentage) {
                 while (true) {
                     // Infinite loop
                 }
@@ -278,7 +278,7 @@ public class FailPoint {
     public static void injectRandomCrash() {
         inject(FP_RANDOM_CRASH, (k, v) -> {
             int percentage = Integer.valueOf(v);
-            if (RandomUtils.nextInt(100) <= percentage) {
+            if (RandomUtils.nextInt(0,100) <= percentage) {
                 try {
                     Runtime.getRuntime().halt(-1);
                 } catch (Exception ignored) {
@@ -290,7 +290,7 @@ public class FailPoint {
     public static void injectRandomEvent(String key, BiConsumer<String, String> consumer) {
         inject(key, (k, v) -> {
             int percentage = Integer.valueOf(v);
-            if (RandomUtils.nextInt(100) <= percentage) {
+            if (RandomUtils.nextInt(0,100) <= percentage) {
                 consumer.accept(k, v);
             }
         });

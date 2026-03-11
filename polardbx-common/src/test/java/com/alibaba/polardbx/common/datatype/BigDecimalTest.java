@@ -16,7 +16,6 @@
 
 package com.alibaba.polardbx.common.datatype;
 
-import org.apache.commons.lang.math.IntRange;
 import org.junit.Assert;
 import org.junit.Test;
 

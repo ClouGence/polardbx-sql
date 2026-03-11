@@ -12,7 +12,7 @@ import com.alibaba.polardbx.qatest.ddl.datamigration.balancer.datagenerator.Norm
 import com.alibaba.polardbx.qatest.ddl.datamigration.balancer.datagenerator.UniformDistributionDataGenerator;
 import com.alibaba.polardbx.qatest.util.JdbcUtil;
 import com.google.common.collect.Lists;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 import java.sql.Connection;

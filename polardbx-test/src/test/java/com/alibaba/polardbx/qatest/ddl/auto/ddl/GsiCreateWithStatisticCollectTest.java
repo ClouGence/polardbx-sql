@@ -3,7 +3,7 @@ package com.alibaba.polardbx.qatest.ddl.auto.ddl;
 import com.alibaba.polardbx.common.utils.Assert;
 import com.alibaba.polardbx.qatest.BaseTestCase;
 import com.alibaba.polardbx.server.util.StringUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

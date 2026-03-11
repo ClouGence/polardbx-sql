@@ -32,8 +32,8 @@ import static com.alibaba.polardbx.optimizer.parse.hint.SimpleHintParser.VTAB;
 import java.sql.SQLSyntaxErrorException;
 import java.util.List;
 
-import org.apache.commons.lang.ObjectUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.ObjectUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import com.alibaba.polardbx.optimizer.parse.util.Pair;
 import com.alibaba.fastjson.JSONArray;

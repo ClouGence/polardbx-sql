@@ -20,7 +20,7 @@ import com.alibaba.fastjson.JSON;
 import com.google.common.collect.Lists;
 import com.alibaba.polardbx.gms.metadb.ccl.CclTriggerRecord;
 import lombok.Data;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Collections;
 import java.util.List;

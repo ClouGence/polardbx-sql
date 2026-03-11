@@ -32,7 +32,7 @@ import com.alibaba.polardbx.optimizer.partition.PartitionSpec;
 import com.alibaba.polardbx.optimizer.partition.common.PartitionTableType;
 import com.alibaba.polardbx.optimizer.tablegroup.TableGroupInfoManager;
 import lombok.Getter;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,25 +103,25 @@ public class PartitionMetaUtil {
 
         PartitionByDefinition partBy = partInfo.getPartitionBy();
         String partMethod = partBy.getStrategy().getStrategyExplainName();
-        String partCol = org.apache.commons.lang.StringUtils.join(partBy.getPartitionColumnNameList(), ",");
+        String partCol = org.apache.commons.lang3.StringUtils.join(partBy.getPartitionColumnNameList(), ",");
         List<String> partColTypeStrList = new ArrayList<>();
         for (int i = 0; i < partBy.getPartitionFieldList().size(); i++) {
             partColTypeStrList.add(partBy.getPartitionFieldList().get(i).getField().getRelType().getFullTypeString());
         }
-        String partColType = org.apache.commons.lang.StringUtils.join(partColTypeStrList, ",");
+        String partColType = org.apache.commons.lang3.StringUtils.join(partColTypeStrList, ",");
 
         List<String> partColExprStrList = new ArrayList<>();
         for (int i = 0; i < partBy.getPartitionExprList().size(); i++) {
             partColExprStrList.add(partBy.getPartitionExprList().get(i).toString());
         }
-        String partExpr = org.apache.commons.lang.StringUtils.join(partColExprStrList, ",");
+        String partExpr = org.apache.commons.lang3.StringUtils.join(partColExprStrList, ",");
 
         PartitionByDefinition subPartBy = partBy.getSubPartitionBy();
         boolean useSubPart = subPartBy != null;
         boolean useSubPartTemp = useSubPart ? subPartBy.isUseSubPartTemplate() : false;
         String subPartMethod = useSubPart ? subPartBy.getStrategy().getStrategyExplainName() : null;
         String subPartCol =
-            useSubPart ? org.apache.commons.lang.StringUtils.join(subPartBy.getPartitionColumnNameList(), ",") : null;
+            useSubPart ? org.apache.commons.lang3.StringUtils.join(subPartBy.getPartitionColumnNameList(), ",") : null;
         String subPartExpr = null;
         String subPartColType = null;
         if (useSubPart) {
@@ -130,7 +130,7 @@ public class PartitionMetaUtil {
                 subPartColTypeStrList.add(
                     subPartBy.getPartitionFieldList().get(i).getField().getRelType().getFullTypeString());
             }
-            subPartColType = org.apache.commons.lang.StringUtils.join(subPartColTypeStrList, ",");
+            subPartColType = org.apache.commons.lang3.StringUtils.join(subPartColTypeStrList, ",");
 
             List<String> subPartColExprStrList = new ArrayList<>();
             for (int i = 0; i < subPartBy.getPartitionExprList().size(); i++) {

@@ -39,7 +39,7 @@ import com.alibaba.polardbx.gms.privilege.PolarTbPriv;
 import com.alibaba.polardbx.gms.privilege.PrivManageCode;
 import com.alibaba.polardbx.gms.privilege.PrivManageResult;
 import com.alibaba.polardbx.gms.privilege.PrivManageType;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.SQLSyntaxErrorException;
 import java.util.ArrayList;

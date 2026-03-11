@@ -19,7 +19,7 @@ package com.alibaba.polardbx.qatest.ddl.sharding.ddl;
 import com.alibaba.polardbx.gms.metadb.limit.Limits;
 import com.alibaba.polardbx.qatest.DDLBaseNewDBTestCase;
 import com.alibaba.polardbx.qatest.util.JdbcUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

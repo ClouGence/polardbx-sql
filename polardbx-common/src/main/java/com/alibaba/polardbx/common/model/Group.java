@@ -17,7 +17,7 @@
 package com.alibaba.polardbx.common.model;
 
 import com.taobao.tddl.common.utils.TddlToStringStyle;
-import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.util.ArrayList;
 import java.util.HashMap;

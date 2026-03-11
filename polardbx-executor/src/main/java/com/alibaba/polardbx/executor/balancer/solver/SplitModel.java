@@ -17,7 +17,7 @@
 package com.alibaba.polardbx.executor.balancer.solver;
 
 import org.apache.calcite.util.Pair;
-import org.apache.commons.lang.ArrayUtils;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

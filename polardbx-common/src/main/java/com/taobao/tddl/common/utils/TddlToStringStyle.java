@@ -19,7 +19,7 @@ package com.taobao.tddl.common.utils;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.apache.commons.lang.builder.ToStringStyle;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 
 public class TddlToStringStyle extends ToStringStyle {

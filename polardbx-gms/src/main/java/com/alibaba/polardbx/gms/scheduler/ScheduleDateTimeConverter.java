@@ -17,7 +17,7 @@
 package com.alibaba.polardbx.gms.scheduler;
 
 import com.alibaba.polardbx.common.utils.timezone.TimeZoneUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.time.Instant;
 import java.time.ZoneId;

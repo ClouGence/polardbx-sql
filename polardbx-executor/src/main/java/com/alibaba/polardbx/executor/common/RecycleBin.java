@@ -47,7 +47,7 @@ import org.apache.calcite.rel.ddl.DropTable;
 import org.apache.calcite.sql.SqlDropTable;
 import org.apache.calcite.sql.SqlIdentifier;
 import org.apache.calcite.sql.parser.SqlParserPos;
-import org.apache.commons.lang.RandomStringUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

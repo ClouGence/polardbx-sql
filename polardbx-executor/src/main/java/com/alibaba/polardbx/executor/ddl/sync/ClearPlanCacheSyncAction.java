@@ -19,7 +19,7 @@ package com.alibaba.polardbx.executor.ddl.sync;
 import com.alibaba.polardbx.executor.cursor.ResultCursor;
 import com.alibaba.polardbx.executor.sync.ISyncAction;
 import com.alibaba.polardbx.optimizer.core.planner.PlanCache;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class ClearPlanCacheSyncAction implements ISyncAction {
 

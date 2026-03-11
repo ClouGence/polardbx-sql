@@ -29,7 +29,7 @@ import com.alibaba.polardbx.optimizer.core.row.Row;
 import com.alibaba.polardbx.optimizer.parse.FastsqlParser;
 import org.apache.calcite.sql.SqlCreateTable;
 import org.apache.calcite.sql.SqlShowCreateTable;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 

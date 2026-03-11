@@ -20,7 +20,7 @@ import java.util.Map;
 
 import com.taobao.tddl.common.utils.TddlToStringStyle;
 import com.alibaba.polardbx.common.utils.TreeMaps;
-import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 public class ExtraCmdRouteCondition implements RouteCondition {
 

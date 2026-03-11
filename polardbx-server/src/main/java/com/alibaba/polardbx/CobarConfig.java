@@ -38,7 +38,7 @@ import com.alibaba.polardbx.config.loader.ServerLoader;
 import com.alibaba.polardbx.server.util.MockUtil;
 import com.google.common.collect.Maps;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

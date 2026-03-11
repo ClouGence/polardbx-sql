@@ -24,7 +24,7 @@ import com.alibaba.polardbx.optimizer.ttl.TtlTimeUnit;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.apachecommons.CommonsLog;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 

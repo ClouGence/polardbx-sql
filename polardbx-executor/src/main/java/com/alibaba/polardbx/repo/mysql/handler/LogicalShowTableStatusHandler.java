@@ -45,7 +45,7 @@ import org.apache.calcite.sql.SqlShowTableStatus;
 import org.apache.calcite.sql.SqlShowTables;
 import org.apache.calcite.sql.SqlShowTables.SqlShowTablesOperator;
 import org.apache.calcite.sql.parser.SqlParserPos;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.sql.DataSource;
 import java.math.BigDecimal;

@@ -26,7 +26,7 @@ import com.alibaba.polardbx.optimizer.core.datatype.IntervalType;
 import com.alibaba.polardbx.optimizer.core.function.calc.AbstractScalarFunction;
 import com.alibaba.polardbx.optimizer.exception.FunctionException;
 import com.alibaba.polardbx.optimizer.utils.FunctionUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 import java.util.concurrent.ExecutionException;

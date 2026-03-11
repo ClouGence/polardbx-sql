@@ -2,7 +2,7 @@ package com.alibaba.polardbx.qatest.twoPhaseDdl.TwoPhaseDdlTestUtils;
 
 import com.alibaba.polardbx.qatest.twoPhaseDdl.TwoPhaseDdlCheckApplicabilityTest;
 import com.alibaba.polardbx.qatest.util.JdbcUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 

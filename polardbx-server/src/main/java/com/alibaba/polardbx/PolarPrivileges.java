@@ -28,8 +28,8 @@ import com.alibaba.polardbx.net.FrontendConnection;
 import com.alibaba.polardbx.net.handler.Privileges;
 import com.alibaba.polardbx.server.ServerConnection;
 import com.taobao.tddl.common.privilege.EncrptPassword;
-import org.apache.commons.lang.NotImplementedException;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.NotImplementedException;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Map;
 import java.util.Set;

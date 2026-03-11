@@ -102,7 +102,7 @@ import com.mysql.jdbc.Statement;
 import com.mysql.jdbc.exceptions.MySQLQueryInterruptedException;
 import com.mysql.jdbc.exceptions.jdbc4.CommunicationsException;
 import org.apache.calcite.sql.SqlKind;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 import org.openjdk.jol.info.ClassLayout;
 

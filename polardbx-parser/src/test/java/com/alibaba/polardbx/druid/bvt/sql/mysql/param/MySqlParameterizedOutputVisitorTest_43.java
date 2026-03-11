@@ -27,7 +27,7 @@ import com.alibaba.polardbx.druid.sql.visitor.SchemaStatVisitor;
 import com.alibaba.polardbx.druid.stat.TableStat;
 import com.alibaba.polardbx.druid.util.JdbcConstants;
 import junit.framework.TestCase;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -66,7 +66,7 @@ import com.alibaba.polardbx.server.ServerConnection;
 import com.google.common.base.Splitter;
 import org.apache.calcite.sql.SqlNodeList;
 import org.apache.calcite.sql.type.SqlTypeName;
-import org.apache.commons.lang.StringEscapeUtils;
+import org.apache.commons.lang3.StringEscapeUtils;
 
 import java.io.File;
 import java.io.FileInputStream;

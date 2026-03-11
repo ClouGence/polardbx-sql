@@ -38,7 +38,7 @@ import com.alibaba.polardbx.optimizer.locality.LocalityManager;
 import com.alibaba.polardbx.optimizer.utils.RelUtils;
 import org.apache.calcite.rel.RelNode;
 import org.apache.calcite.sql.SqlShowCreateDatabase;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 

@@ -63,7 +63,7 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.calcite.sql.SqlIdentifier;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.HashMap;
 import java.util.HashSet;

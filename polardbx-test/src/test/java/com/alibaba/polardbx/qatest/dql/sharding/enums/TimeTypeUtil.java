@@ -1,7 +1,7 @@
 package com.alibaba.polardbx.qatest.dql.sharding.enums;
 
 import com.alibaba.polardbx.qatest.dql.sharding.type.numeric.CastTestUtils;
-import org.apache.commons.lang.time.DateUtils;
+import org.apache.commons.lang3.time.DateUtils;
 
 import java.util.Date;
 import java.util.Random;

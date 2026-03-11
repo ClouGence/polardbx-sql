@@ -26,7 +26,7 @@ import org.apache.calcite.sql.SqlUpdate;
 import org.apache.calcite.sql.fun.SqlStdOperatorTable;
 import org.apache.calcite.sql.parser.SqlParserPos;
 import org.apache.calcite.sql.util.SqlShuttle;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class RemoveIndexNodeVisitor extends SqlShuttle {
     private final static Logger logger = LoggerFactory.getLogger(PlannerUtils.class);

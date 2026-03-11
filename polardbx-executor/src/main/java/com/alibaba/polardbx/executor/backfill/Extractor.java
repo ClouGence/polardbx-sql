@@ -71,8 +71,8 @@ import org.apache.calcite.rel.RelNode;
 import org.apache.calcite.sql.OptimizerHint;
 import org.apache.calcite.sql.SqlSelect;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.StringEscapeUtils;
-import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;
@@ -1027,7 +1027,7 @@ public class Extractor extends PhyOperationBuilderCommon {
         boolean enablePhyTblParallelBackfill =
             ecPm.getBoolean(ConnectionParams.ENABLE_PHYSICAL_TABLE_PARALLEL_BACKFILL);
         long slideWindowInterval = ecPm.getLong(ConnectionParams.SLIDE_WINDOW_TIME_INTERVAL);
-        long randomInterval = RandomUtils.nextInt(maxRandomInterval) + slideWindowInterval;
+        long randomInterval = RandomUtils.nextInt(0,maxRandomInterval) + slideWindowInterval;
         int splitCount = ecPm.getInt(ConnectionParams.SLIDE_WINDOW_SPLIT_SIZE);
 
         if (enableSample && enablePhyTblParallelBackfill && enableSlideWindowBackfill && splitCount > 1

@@ -44,7 +44,7 @@ import com.alibaba.polardbx.statistics.RuntimeStatistics;
 import com.alibaba.polardbx.statistics.RuntimeStatistics.Metrics;
 import com.alibaba.polardbx.statistics.SQLRecorderLogger;
 import org.apache.calcite.plan.RelOptCost;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.annotation.Nullable;
 import java.util.List;

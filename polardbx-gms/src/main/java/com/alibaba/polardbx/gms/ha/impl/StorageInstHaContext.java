@@ -18,7 +18,7 @@ package com.alibaba.polardbx.gms.ha.impl;
 
 import com.alibaba.polardbx.gms.topology.StorageInfoRecord;
 import lombok.val;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collection;

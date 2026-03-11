@@ -99,7 +99,7 @@ import lombok.NoArgsConstructor;
 import org.apache.calcite.sql.SqlRebalance;
 import org.apache.calcite.sql.parser.SqlParserPos;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
 import java.sql.Connection;

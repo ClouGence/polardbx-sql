@@ -27,8 +27,8 @@ import com.alibaba.polardbx.rule.enumerator.utils.CrossYearDate;
 import com.alibaba.polardbx.rule.meta.ShardFunctionMeta;
 import com.alibaba.polardbx.rule.meta.StringNum;
 import com.alibaba.polardbx.rule.model.AdvancedParameter.AtomIncreaseType;
-import org.apache.commons.lang.BooleanUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.BooleanUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigInteger;

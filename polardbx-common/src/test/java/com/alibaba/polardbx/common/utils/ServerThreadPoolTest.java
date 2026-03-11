@@ -17,8 +17,8 @@
 package com.alibaba.polardbx.common.utils;
 
 import com.alibaba.polardbx.common.utils.thread.ServerThreadPool;
-import org.apache.commons.lang.RandomStringUtils;
-import org.apache.commons.lang.exception.ExceptionUtils;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -55,7 +55,7 @@ public class ServerThreadPoolTest {
 
                             @Override
                             public Boolean call() throws Exception {
-                                //LockSupport.parkNanos(1000 * 100 * RandomUtils.nextInt(10));
+                                //LockSupport.parkNanos(1000 * 100 * RandomUtils.nextInt(0,10));
                                 latch.countDown();
                                 return true;
                             }
@@ -132,7 +132,7 @@ public class ServerThreadPoolTest {
         try {
             latch.await();
         } catch (InterruptedException e) {
-            Assert.fail(ExceptionUtils.getFullStackTrace(e));
+            Assert.fail(ExceptionUtils.getStackTrace(e));
         }
 
         long cost = System.currentTimeMillis() - start;
@@ -198,7 +198,7 @@ public class ServerThreadPoolTest {
         try {
             latch.await();
         } catch (InterruptedException e) {
-            Assert.fail(ExceptionUtils.getFullStackTrace(e));
+            Assert.fail(ExceptionUtils.getStackTrace(e));
         }
 
         long cost = System.currentTimeMillis() - start;

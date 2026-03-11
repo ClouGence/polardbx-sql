@@ -52,7 +52,7 @@ import com.google.common.collect.Sets;
 import org.apache.calcite.sql.SqlRebalance;
 import org.apache.calcite.util.Pair;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;

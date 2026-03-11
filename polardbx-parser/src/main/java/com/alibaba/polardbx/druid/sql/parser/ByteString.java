@@ -16,7 +16,7 @@
 
 package com.alibaba.polardbx.druid.sql.parser;
 
-import org.apache.commons.lang.ArrayUtils;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;

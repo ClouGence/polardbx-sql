@@ -4202,13 +4202,13 @@ public class SQLStatementParser extends SQLParser {
             final String END_CODE = "END_CODE";
             int startIndex = lexer.pos;
             String originString = lexer.text.toString();
-            int endIndex = org.apache.commons.lang.StringUtils.indexOfIgnoreCase(originString, END_CODE, startIndex);
+            int endIndex = org.apache.commons.lang3.StringUtils.indexOfIgnoreCase(originString, END_CODE, startIndex);
             if (endIndex == -1) {
                 throw new ParserException("Should contain END_CODE in java udf");
             }
             int nextSearchIndex = endIndex + END_CODE.length();
             if (originString.length() > nextSearchIndex
-                && org.apache.commons.lang.StringUtils.indexOfIgnoreCase(originString, END_CODE, nextSearchIndex)
+                && org.apache.commons.lang3.StringUtils.indexOfIgnoreCase(originString, END_CODE, nextSearchIndex)
                 != -1) {
                 throw new ParserException("Found duplicate END_CODE keyword in the java udf, please check");
             }

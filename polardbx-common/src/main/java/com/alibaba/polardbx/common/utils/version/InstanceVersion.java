@@ -18,7 +18,7 @@ package com.alibaba.polardbx.common.utils.version;
 
 import com.alibaba.polardbx.common.utils.logger.Logger;
 import com.alibaba.polardbx.common.utils.logger.LoggerFactory;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class InstanceVersion {
 

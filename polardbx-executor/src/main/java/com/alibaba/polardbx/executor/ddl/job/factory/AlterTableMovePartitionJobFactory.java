@@ -52,7 +52,7 @@ import com.alibaba.polardbx.optimizer.core.rel.ddl.data.AlterTableMovePartitionP
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import org.apache.calcite.rel.core.DDL;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -26,7 +26,7 @@ import com.google.common.util.concurrent.MoreExecutors;
 import com.alibaba.polardbx.common.utils.BooleanMutex;
 import com.alibaba.polardbx.common.utils.logger.Logger;
 import com.alibaba.polardbx.common.utils.logger.LoggerFactory;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 import java.util.Timer;

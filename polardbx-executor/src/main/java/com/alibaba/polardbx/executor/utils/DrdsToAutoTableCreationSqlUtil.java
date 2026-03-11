@@ -63,7 +63,7 @@ import com.alibaba.polardbx.repo.mysql.handler.LogicalShowTablesMyHandler;
 import org.apache.calcite.sql.SqlIdentifier;
 import org.apache.calcite.sql.SqlShowTables;
 import org.apache.calcite.sql.parser.SqlParserPos;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Types;
 import java.util.ArrayList;

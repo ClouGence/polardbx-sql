@@ -21,9 +21,8 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-
 import com.taobao.tddl.common.utils.TddlToStringStyle;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
  * <pre>

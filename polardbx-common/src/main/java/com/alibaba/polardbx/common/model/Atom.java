@@ -19,7 +19,7 @@ package com.alibaba.polardbx.common.model;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import com.taobao.tddl.common.utils.TddlToStringStyle;
 

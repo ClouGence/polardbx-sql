@@ -7,7 +7,7 @@ import com.alibaba.polardbx.qatest.util.PropertiesUtil;
 import com.clearspring.analytics.util.Lists;
 import com.google.common.collect.Maps;
 import lombok.SneakyThrows;
-import org.apache.commons.lang.exception.ExceptionUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
@@ -193,7 +193,7 @@ public class CclDalSqlTest extends ReadBaseTestCase {
                         try (Connection connection = anotherConnection; Statement stmt = connection.createStatement()) {
                             stmt.execute("select sleep(6)");
                         } catch (Exception e) {
-                            System.out.println(ExceptionUtils.getFullStackTrace(e));
+                            System.out.println(ExceptionUtils.getStackTrace(e));
                         }
                     }
                 };
@@ -250,7 +250,7 @@ public class CclDalSqlTest extends ReadBaseTestCase {
                         try (Connection connection = anotherConnection; Statement stmt = connection.createStatement()) {
                             stmt.execute("select sleep(6)");
                         } catch (Exception e) {
-                            System.out.println(ExceptionUtils.getFullStackTrace(e));
+                            System.out.println(ExceptionUtils.getStackTrace(e));
                         }
                     }
                 };

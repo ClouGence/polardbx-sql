@@ -43,7 +43,7 @@ import com.alibaba.polardbx.optimizer.partition.util.TableMetaFetcher;
 import com.alibaba.polardbx.optimizer.rule.TddlRuleManager;
 import lombok.Setter;
 import lombok.val;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 
 import java.sql.Connection;

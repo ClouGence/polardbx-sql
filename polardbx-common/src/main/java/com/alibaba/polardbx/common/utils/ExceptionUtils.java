@@ -17,8 +17,7 @@
 package com.alibaba.polardbx.common.utils;
 
 import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
-import org.apache.commons.lang.ArrayUtils;
-import org.apache.commons.lang.exception.Nestable;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -79,17 +78,40 @@ public class ExceptionUtils {
         return cause;
     }
 
+    // lang3 have no Nestable
     private static Throwable getCauseUsingWellKnownTypes(Throwable throwable) {
-        if (throwable instanceof Nestable) {
-            return ((Nestable) throwable).getCause();
-        } else if (throwable instanceof SQLException) {
-            return ((SQLException) throwable).getNextException();
-        } else if (throwable instanceof InvocationTargetException) {
-            return ((InvocationTargetException) throwable).getTargetException();
-        } else {
+        if (throwable == null) {
             return null;
         }
+
+        if (throwable instanceof SQLException) {
+            Throwable next = ((SQLException) throwable).getNextException();
+            if (next != null) {
+                return next;
+            }
+        }
+
+        if (throwable instanceof InvocationTargetException) {
+            Throwable target = ((InvocationTargetException) throwable).getTargetException();
+            if (target != null) {
+                return target;
+            }
+        }
+
+        return throwable.getCause();
     }
+
+//    private static Throwable getCauseUsingWellKnownTypes(Throwable throwable) {
+//        if (throwable instanceof Nestable) {
+//            return ((Nestable) throwable).getCause();
+//        } else if (throwable instanceof SQLException) {
+//            return ((SQLException) throwable).getNextException();
+//        } else if (throwable instanceof InvocationTargetException) {
+//            return ((InvocationTargetException) throwable).getTargetException();
+//        } else {
+//            return null;
+//        }
+//    }
 
     private static Throwable getCauseUsingMethodName(Throwable throwable, String methodName) {
         Method method = null;

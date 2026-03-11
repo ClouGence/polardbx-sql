@@ -36,7 +36,7 @@ import com.alibaba.polardbx.optimizer.core.rel.ddl.LogicalAlterTableSetTableGrou
 import com.alibaba.polardbx.optimizer.core.rel.ddl.data.AlterTableSetTableGroupPreparedData;
 import com.alibaba.polardbx.optimizer.partition.PartitionInfo;
 import org.apache.calcite.rel.ddl.AlterTableSetTableGroup;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 public class LogicalAlterTableSetTableGroupHandler extends LogicalCommonDdlHandler {
 

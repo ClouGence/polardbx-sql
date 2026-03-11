@@ -24,7 +24,7 @@ import com.taobao.tddl.common.privilege.PrivilegePoint;
 import com.alibaba.polardbx.common.utils.TStringUtil;
 import com.alibaba.polardbx.gms.metadb.ccl.CclRuleRecord;
 import lombok.Data;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Deque;
 import java.util.List;

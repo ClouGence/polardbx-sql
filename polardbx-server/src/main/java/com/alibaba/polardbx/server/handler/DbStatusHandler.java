@@ -42,7 +42,7 @@ import com.alibaba.polardbx.executor.common.DbStatusManager.DbReadOnlyStatus;
 import com.alibaba.polardbx.matrix.jdbc.TConnection;
 import com.alibaba.polardbx.matrix.jdbc.TDataSource;
 import com.alibaba.polardbx.optimizer.parse.FastsqlUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.SQLException;
 import java.util.Calendar;

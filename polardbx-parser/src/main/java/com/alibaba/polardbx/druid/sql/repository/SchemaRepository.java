@@ -70,7 +70,7 @@ import com.alibaba.polardbx.druid.support.logging.LogFactory;
 import com.alibaba.polardbx.druid.util.CharsetNameForParser;
 import com.alibaba.polardbx.druid.util.CollationNameForParser;
 import com.alibaba.polardbx.druid.util.FnvHash;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 import java.util.Collection;

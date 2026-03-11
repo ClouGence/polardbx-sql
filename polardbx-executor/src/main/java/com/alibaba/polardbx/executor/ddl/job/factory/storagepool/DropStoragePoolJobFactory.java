@@ -31,7 +31,7 @@ import com.alibaba.polardbx.optimizer.core.rel.ddl.data.DropStoragePoolPrepareDa
 import com.alibaba.polardbx.optimizer.locality.StoragePoolInfo;
 import com.alibaba.polardbx.optimizer.locality.StoragePoolManager;
 import com.google.common.collect.Lists;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 import java.util.Set;

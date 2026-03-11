@@ -30,7 +30,7 @@ import com.alibaba.polardbx.rule.model.AdvancedParameter;
 import com.alibaba.polardbx.rule.utils.RuleUtils;
 import com.alibaba.polardbx.rule.utils.sample.Samples;
 import com.alibaba.polardbx.rule.utils.sample.SamplesCtx;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import com.alibaba.polardbx.common.model.sqljep.Comparative;
 

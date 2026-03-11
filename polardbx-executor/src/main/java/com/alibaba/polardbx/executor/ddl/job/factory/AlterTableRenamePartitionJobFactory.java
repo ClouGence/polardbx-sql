@@ -83,7 +83,7 @@ public class AlterTableRenamePartitionJobFactory extends AlterTableGroupBaseJobF
             return renameAndMoveToExistTableGroup();
         } else if (preparedData.isCreateNewTableGroup()) {
             return renameInNewTableGroup();
-        } else if (org.apache.commons.lang.StringUtils.isNotEmpty(preparedData.getTargetImplicitTableGroupName())) {
+        } else if (org.apache.commons.lang3.StringUtils.isNotEmpty(preparedData.getTargetImplicitTableGroupName())) {
             return withImplicitTableGroup(executionContext);
         } else {
             throw new RuntimeException("unexpected");

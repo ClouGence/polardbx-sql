@@ -18,7 +18,7 @@ package com.alibaba.polardbx.gms.privilege;
 
 import com.google.common.base.Preconditions;
 import com.taobao.tddl.common.privilege.AuthPlugin;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 import java.sql.SQLException;

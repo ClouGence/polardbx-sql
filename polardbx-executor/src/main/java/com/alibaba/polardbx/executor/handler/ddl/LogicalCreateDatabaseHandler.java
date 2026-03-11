@@ -48,7 +48,7 @@ import com.google.common.base.Predicate;
 import com.google.common.base.Strings;
 import org.apache.calcite.rel.RelNode;
 import org.apache.calcite.sql.SqlCreateDatabase;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
 import static com.alibaba.polardbx.executor.ddl.job.task.cdc.CdcMarkUtil.buildExtendParameter;

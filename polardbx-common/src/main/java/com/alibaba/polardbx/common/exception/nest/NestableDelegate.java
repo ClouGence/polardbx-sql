@@ -17,8 +17,8 @@
 
 package com.alibaba.polardbx.common.exception.nest;
 
-import org.apache.commons.lang.SystemUtils;
-import org.apache.commons.lang.exception.ExceptionUtils;
+import org.apache.commons.lang3.SystemUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 
 import java.io.PrintStream;
 import java.io.PrintWriter;
@@ -142,47 +142,54 @@ public class NestableDelegate implements Serializable {
         }
     }
 
+    // lang3 has fixed strategy
     public void printStackTrace(PrintWriter out) {
-        Throwable throwable = this.nestable;
-
-        if (ExceptionUtils.isThrowableNested()) {
-            if (throwable instanceof Nestable) {
-                ((Nestable) throwable).printPartialStackTrace(out);
-            } else {
-                throwable.printStackTrace(out);
-            }
-            return;
-        }
-
-        List stacks = new ArrayList();
-        while (throwable != null) {
-            String[] st = getStackFrames(throwable);
-            stacks.add(st);
-            throwable = ExceptionUtils.getCause(throwable);
-        }
-
-        String separatorLine = "Caused by: ";
-        if (!topDown) {
-            separatorLine = "Rethrown as: ";
-            Collections.reverse(stacks);
-        }
-
-        if (trimStackFrames) {
-            trimStackFrames(stacks);
-        }
-
         synchronized (out) {
-            for (Iterator iter = stacks.iterator(); iter.hasNext(); ) {
-                String[] st = (String[]) iter.next();
-                for (int i = 0, len = st.length; i < len; i++) {
-                    out.println(st[i]);
-                }
-                if (iter.hasNext()) {
-                    out.print(separatorLine);
-                }
-            }
+            ExceptionUtils.printRootCauseStackTrace(nestable, out);
         }
     }
+
+//    public void printStackTrace(PrintWriter out) {
+//        Throwable throwable = this.nestable;
+//
+//        if (ExceptionUtils.isThrowableNested()) {
+//            if (throwable instanceof Nestable) {
+//                ((Nestable) throwable).printPartialStackTrace(out);
+//            } else {
+//                throwable.printStackTrace(out);
+//            }
+//            return;
+//        }
+//
+//        List stacks = new ArrayList();
+//        while (throwable != null) {
+//            String[] st = getStackFrames(throwable);
+//            stacks.add(st);
+//            throwable = ExceptionUtils.getCause(throwable);
+//        }
+//
+//        String separatorLine = "Caused by: ";
+//        if (!topDown) {
+//            separatorLine = "Rethrown as: ";
+//            Collections.reverse(stacks);
+//        }
+//
+//        if (trimStackFrames) {
+//            trimStackFrames(stacks);
+//        }
+//
+//        synchronized (out) {
+//            for (Iterator iter = stacks.iterator(); iter.hasNext(); ) {
+//                String[] st = (String[]) iter.next();
+//                for (int i = 0, len = st.length; i < len; i++) {
+//                    out.println(st[i]);
+//                }
+//                if (iter.hasNext()) {
+//                    out.print(separatorLine);
+//                }
+//            }
+//        }
+//    }
 
     protected String[] getStackFrames(Throwable t) {
         StringWriter sw = new StringWriter();

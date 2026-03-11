@@ -17,7 +17,7 @@
 package com.alibaba.polardbx.common.exception;
 
 import com.alibaba.polardbx.common.exception.code.ErrorCode;
-import org.apache.commons.lang.exception.ExceptionUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 
 import java.sql.SQLException;
 

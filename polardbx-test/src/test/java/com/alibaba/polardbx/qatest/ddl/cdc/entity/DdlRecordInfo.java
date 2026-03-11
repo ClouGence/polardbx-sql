@@ -45,7 +45,7 @@ public class DdlRecordInfo {
         if (metaInfo != null) {
             LogicMeta.LogicTableMeta logicTableMeta = metaInfo.getLogicTableMeta();
             logicTableMeta.getPhySchemas().forEach(phySchema -> {
-                Assert.assertTrue(org.apache.commons.lang.StringUtils.isNotBlank(phySchema.getSchema()));
+                Assert.assertTrue(org.apache.commons.lang3.StringUtils.isNotBlank(phySchema.getSchema()));
             });
             return logicTableMeta.getPhySchemas().stream()
                 .collect(Collectors.toMap(LogicMeta.PhySchema::getGroup,

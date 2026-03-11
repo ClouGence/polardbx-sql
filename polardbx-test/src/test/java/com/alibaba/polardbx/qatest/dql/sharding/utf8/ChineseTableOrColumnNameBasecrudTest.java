@@ -21,9 +21,9 @@ import com.alibaba.polardbx.qatest.ReadBaseTestCase;
 import com.alibaba.polardbx.qatest.data.ExecuteCHNTableName;
 import com.alibaba.polardbx.qatest.util.JdbcUtil;
 import com.google.common.collect.Lists;
-import org.apache.commons.lang.RandomStringUtils;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runners.Parameterized;
@@ -84,7 +84,7 @@ public class ChineseTableOrColumnNameBasecrudTest extends ReadBaseTestCase {
     }
 
     private int randomPrimaryKey() {
-        int randomIndex = RandomUtils.nextInt(primaryKeys.size());
+        int randomIndex = RandomUtils.nextInt(0,primaryKeys.size());
         return primaryKeys.get(randomIndex);
     }
 

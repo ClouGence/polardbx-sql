@@ -21,7 +21,7 @@ import com.alibaba.polardbx.common.statementsummary.model.StatementSummaryByDige
 import com.alibaba.polardbx.common.statementsummary.model.StatementSummaryElementByDigest;
 import com.alibaba.polardbx.common.utils.Assert;
 import com.google.common.collect.Lists;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.util.List;

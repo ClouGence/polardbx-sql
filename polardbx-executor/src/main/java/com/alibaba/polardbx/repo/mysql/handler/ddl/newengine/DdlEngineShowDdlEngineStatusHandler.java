@@ -22,7 +22,7 @@ import com.alibaba.polardbx.optimizer.core.rel.dal.LogicalShow;
 import lombok.Data;
 import org.apache.calcite.sql.SqlShowDdlEngine;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

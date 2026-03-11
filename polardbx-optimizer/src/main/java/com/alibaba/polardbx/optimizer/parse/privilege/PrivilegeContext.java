@@ -25,7 +25,7 @@ import com.alibaba.polardbx.gms.privilege.ActiveRoles;
 import com.alibaba.polardbx.gms.privilege.Permission;
 import com.alibaba.polardbx.gms.privilege.PermissionCheckContext;
 import com.alibaba.polardbx.gms.privilege.PolarAccountInfo;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;

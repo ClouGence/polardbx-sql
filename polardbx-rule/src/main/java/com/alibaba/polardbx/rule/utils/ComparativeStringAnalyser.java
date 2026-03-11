@@ -24,7 +24,7 @@ import java.util.Locale;
 import java.util.Map;
 
 import com.alibaba.polardbx.common.exception.NotSupportException;
-import org.apache.commons.lang.time.DateFormatUtils;
+import org.apache.commons.lang3.time.DateFormatUtils;
 
 import com.alibaba.polardbx.common.exception.TddlRuntimeException;
 import com.alibaba.polardbx.common.exception.code.ErrorCode;

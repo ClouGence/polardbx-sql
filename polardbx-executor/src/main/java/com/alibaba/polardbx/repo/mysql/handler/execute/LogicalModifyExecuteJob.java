@@ -26,7 +26,7 @@ import com.alibaba.polardbx.optimizer.core.rel.dml.BroadcastWriter;
 import com.alibaba.polardbx.optimizer.core.rel.dml.DistinctWriter;
 import com.alibaba.polardbx.optimizer.utils.PhyTableOperationUtil;
 import org.apache.calcite.rel.RelNode;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;

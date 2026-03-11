@@ -20,7 +20,7 @@ import com.alibaba.polardbx.atom.TAtomDbStatusEnum;
 import com.alibaba.polardbx.atom.TAtomDbTypeEnum;
 import com.alibaba.polardbx.common.utils.TStringUtil;
 import com.taobao.tddl.common.utils.TddlToStringStyle;
-import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.util.HashMap;
 import java.util.Map;

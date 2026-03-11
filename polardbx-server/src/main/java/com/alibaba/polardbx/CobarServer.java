@@ -76,7 +76,7 @@ import com.alibaba.polardbx.server.handler.ColumnarConfigHandler;
 import com.alibaba.polardbx.ssl.SslContextFactory;
 import com.google.common.annotations.VisibleForTesting;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;
 import java.sql.Connection;

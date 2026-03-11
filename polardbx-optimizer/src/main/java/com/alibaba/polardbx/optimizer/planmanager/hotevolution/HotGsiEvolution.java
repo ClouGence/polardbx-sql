@@ -19,7 +19,7 @@ import com.alibaba.polardbx.optimizer.planmanager.PlanManagerUtil;
 import com.alibaba.polardbx.stats.metric.FeatureStats;
 import com.google.common.collect.Sets;
 import org.apache.calcite.rel.RelNode;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Locale;
 import java.util.Set;

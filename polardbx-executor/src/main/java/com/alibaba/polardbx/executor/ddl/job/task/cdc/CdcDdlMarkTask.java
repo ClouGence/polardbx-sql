@@ -42,7 +42,7 @@ import com.alibaba.polardbx.optimizer.core.rel.ddl.data.AlterTablePreparedData;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.calcite.sql.SqlKind;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 import java.util.ArrayList;

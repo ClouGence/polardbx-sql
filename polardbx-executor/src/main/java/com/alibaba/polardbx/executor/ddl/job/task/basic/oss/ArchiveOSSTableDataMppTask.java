@@ -28,7 +28,7 @@ import com.alibaba.polardbx.gms.metadb.table.FilesRecord;
 import com.alibaba.polardbx.optimizer.context.ExecutionContext;
 import com.alibaba.polardbx.optimizer.partition.pruning.PhysicalPartitionInfo;
 import lombok.Getter;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 import java.util.List;

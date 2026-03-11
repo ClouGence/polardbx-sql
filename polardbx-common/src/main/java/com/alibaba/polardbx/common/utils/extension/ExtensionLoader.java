@@ -31,9 +31,9 @@ import com.alibaba.polardbx.common.utils.GeneralUtil;
 import com.alibaba.polardbx.common.utils.logger.Logger;
 import com.alibaba.polardbx.common.utils.logger.LoggerFactory;
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.ObjectUtils;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.exception.ExceptionUtils;
+import org.apache.commons.lang3.ObjectUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 
 import com.google.common.collect.Maps;
 
@@ -122,7 +122,7 @@ public class ExtensionLoader<S> {
                 throw (ExtensionNotFoundException) e;
             } else {
                 throw new ExtensionNotFoundException("not found service provider for : " + service.getName()
-                    + " caused by " + ExceptionUtils.getFullStackTrace(e));
+                    + " caused by " + ExceptionUtils.getStackTrace(e));
             }
         }
     }

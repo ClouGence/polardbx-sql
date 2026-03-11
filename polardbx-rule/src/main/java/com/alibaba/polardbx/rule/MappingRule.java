@@ -16,7 +16,7 @@
 
 package com.alibaba.polardbx.rule;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Objects;
 import java.util.Set;

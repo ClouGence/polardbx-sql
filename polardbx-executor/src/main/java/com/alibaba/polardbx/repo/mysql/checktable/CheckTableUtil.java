@@ -35,7 +35,7 @@ import com.alibaba.polardbx.optimizer.index.Index;
 import com.alibaba.polardbx.repo.mysql.spi.MyRepository;
 import com.mysql.jdbc.MysqlErrorNumbers;
 import org.apache.calcite.sql.SqlIdentifier;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

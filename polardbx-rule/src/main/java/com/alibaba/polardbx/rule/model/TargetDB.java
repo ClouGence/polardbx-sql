@@ -21,9 +21,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-
 import com.taobao.tddl.common.utils.TddlToStringStyle;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
  * 目标数据库特征 包含读写目标ds的id 以及该ds中符合要求的表名列表。

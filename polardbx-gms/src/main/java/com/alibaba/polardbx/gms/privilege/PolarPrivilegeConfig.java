@@ -20,7 +20,7 @@ import com.alibaba.polardbx.common.utils.logger.Logger;
 import com.alibaba.polardbx.common.utils.logger.LoggerFactory;
 import com.alibaba.polardbx.config.Config;
 import com.alibaba.polardbx.config.Configurable;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.invoke.MethodHandle;
 import java.util.ArrayList;

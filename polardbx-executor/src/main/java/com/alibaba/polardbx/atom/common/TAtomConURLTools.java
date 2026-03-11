@@ -17,7 +17,7 @@
 package com.alibaba.polardbx.atom.common;
 
 import com.alibaba.polardbx.common.utils.TStringUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.text.MessageFormat;
 import java.util.Map;

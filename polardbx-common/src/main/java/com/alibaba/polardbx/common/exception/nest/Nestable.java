@@ -17,8 +17,6 @@
 
 package com.alibaba.polardbx.common.exception.nest;
 
-import org.apache.commons.lang.exception.ExceptionUtils;
-
 import java.io.PrintStream;
 import java.io.PrintWriter;
 

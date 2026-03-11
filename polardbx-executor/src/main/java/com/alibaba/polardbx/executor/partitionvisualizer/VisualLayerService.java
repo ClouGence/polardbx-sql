@@ -26,7 +26,7 @@ import com.alibaba.polardbx.executor.partitionvisualizer.model.VisualLayerConfig
 import com.alibaba.polardbx.executor.partitionvisualizer.model.VisualTypeConstants;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

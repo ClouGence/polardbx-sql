@@ -40,7 +40,7 @@ import com.alibaba.polardbx.optimizer.utils.SqlIdentifierUtil;
 import lombok.Data;
 import org.apache.calcite.rel.type.RelDataType;
 import org.apache.calcite.rel.type.RelDataTypeFactory;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;

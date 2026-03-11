@@ -45,7 +45,7 @@ import com.alibaba.polardbx.optimizer.partition.PartitionSpec;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import org.apache.calcite.rel.core.DDL;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -84,7 +84,7 @@ public class AlterTableSplitPartitionJobFactory extends AlterTableGroupBaseJobFa
             return splitAndMoveToExistTableGroup();
         } else if (preparedData.isCreateNewTableGroup()) {
             return splitInNewTableGroup();
-        } else if (org.apache.commons.lang.StringUtils.isNotEmpty(preparedData.getTargetImplicitTableGroupName())) {
+        } else if (org.apache.commons.lang3.StringUtils.isNotEmpty(preparedData.getTargetImplicitTableGroupName())) {
             return withImplicitTableGroup(executionContext);
         } else {
             throw new RuntimeException("unexpected");

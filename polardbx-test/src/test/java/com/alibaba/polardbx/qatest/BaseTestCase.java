@@ -33,8 +33,8 @@ import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.truth.StandardSubjectBuilder;
 import com.google.common.truth.Truth;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -316,7 +316,7 @@ public class BaseTestCase implements BaseTestMode {
             String colName = getColumnForColumnar(dbName, tableName);
             String sql =
                 String.format(CREATE_COLUMNAR_INDEX, "col_idx_" + colName, tableName, colName, colName,
-                    RandomUtils.nextInt(9) + 1);
+                    RandomUtils.nextInt(0,9) + 1);
             tasks.add(() -> {
                 try (Connection conn = getPolardbxConnection(dbName)) {
                     log.info(sql);
@@ -375,7 +375,7 @@ public class BaseTestCase implements BaseTestMode {
         } catch (Throwable t) {
             throw new RuntimeException(t);
         }
-        return columns.get(RandomUtils.nextInt(columns.size()));
+        return columns.get(RandomUtils.nextInt(0,columns.size()));
     }
 
     private void prepareColumnarVars() {

@@ -16,7 +16,7 @@
 
 package com.alibaba.polardbx.common.utils.jar;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.BufferedInputStream;
 import java.io.File;

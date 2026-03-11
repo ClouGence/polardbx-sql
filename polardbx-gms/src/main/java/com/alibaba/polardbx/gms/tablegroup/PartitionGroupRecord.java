@@ -17,7 +17,7 @@
 package com.alibaba.polardbx.gms.tablegroup;
 
 import com.alibaba.polardbx.gms.metadb.record.SystemTableRecord;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -94,7 +94,7 @@ public class CreateJavaFunctionJobFactory extends AbstractFunctionJobFactory {
         DataTypeUtil.createBasicSqlType(TddlRelDataTypeSystemImpl.getInstance(), returnDataType);
         String inputTypes = Optional.ofNullable(sqlCreateFunction.getInputTypes())
             .map(types -> String.join(",", types)).orElse("");
-        if (!org.apache.commons.lang.StringUtils.isEmpty(inputTypes)) {
+        if (!org.apache.commons.lang3.StringUtils.isEmpty(inputTypes)) {
             // validate input types
             List<SQLDataType> inputDataTypes = FastsqlUtils.parseDataType(inputTypes);
             for (SQLDataType type : inputDataTypes) {

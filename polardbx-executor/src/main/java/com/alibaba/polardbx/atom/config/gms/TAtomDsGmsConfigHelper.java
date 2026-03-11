@@ -25,7 +25,7 @@ import com.alibaba.polardbx.gms.config.impl.ConnPoolConfig;
 import com.alibaba.polardbx.gms.topology.DbInfoManager;
 import com.alibaba.polardbx.gms.util.GmsJdbcUtil;
 import com.alibaba.polardbx.gms.util.PasswdUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Map;
 

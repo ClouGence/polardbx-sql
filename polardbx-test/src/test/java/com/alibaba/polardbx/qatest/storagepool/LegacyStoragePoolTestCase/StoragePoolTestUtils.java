@@ -4,7 +4,7 @@ import com.alibaba.polardbx.qatest.ddl.datamigration.locality.LocalityTestBase;
 import com.alibaba.polardbx.qatest.util.JdbcUtil;
 import lombok.Getter;
 import net.jcip.annotations.NotThreadSafe;
-import org.apache.commons.lang.BooleanUtils;
+import org.apache.commons.lang3.BooleanUtils;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

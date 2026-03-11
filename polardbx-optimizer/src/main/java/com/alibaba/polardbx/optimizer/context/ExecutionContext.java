@@ -87,7 +87,7 @@ import org.apache.calcite.rex.RexNode;
 import org.apache.calcite.sql.SqlExplainLevel;
 import org.apache.calcite.util.NlsString;
 import org.apache.calcite.util.trace.CalcitePlanOptimizerTrace;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.InputStream;
 import java.sql.Connection;

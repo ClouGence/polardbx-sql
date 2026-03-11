@@ -60,7 +60,7 @@ import org.apache.calcite.sql.SqlSlowSqlCcl;
 import org.apache.calcite.sql.SqlSpecialIdentifier;
 import org.apache.calcite.sql.parser.SqlParserPos;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 import java.util.Date;

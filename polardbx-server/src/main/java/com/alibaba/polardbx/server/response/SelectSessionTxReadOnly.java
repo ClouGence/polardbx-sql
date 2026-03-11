@@ -28,7 +28,7 @@ import com.alibaba.polardbx.net.packet.RowDataPacket;
 import com.alibaba.polardbx.server.ServerConnection;
 import com.alibaba.polardbx.server.util.LongUtil;
 import com.alibaba.polardbx.server.util.PacketUtil;
-import org.apache.commons.lang.BooleanUtils;
+import org.apache.commons.lang3.BooleanUtils;
 
 /**
  * @author agapple 2016年3月17日 下午9:29:47

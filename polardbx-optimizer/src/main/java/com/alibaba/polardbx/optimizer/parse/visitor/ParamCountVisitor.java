@@ -19,7 +19,7 @@ package com.alibaba.polardbx.optimizer.parse.visitor;
 import com.alibaba.polardbx.druid.sql.ast.expr.SQLVariantRefExpr;
 import com.alibaba.polardbx.druid.sql.dialect.mysql.visitor.MySqlOutputVisitor;
 import com.alibaba.polardbx.optimizer.parse.FastSqlParserException;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * ${DESCRIPTION}

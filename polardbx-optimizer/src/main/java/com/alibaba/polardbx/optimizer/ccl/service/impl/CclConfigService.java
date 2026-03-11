@@ -46,7 +46,7 @@ import com.google.common.hash.Funnel;
 import com.google.common.hash.PrimitiveSink;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 import java.text.MessageFormat;

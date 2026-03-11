@@ -16,7 +16,7 @@
 
 package com.alibaba.polardbx.rule;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * 做一下老的rule兼容处理，tddl5版本类名做了下统一调整，所以以前配置中使用的一下类名已经不存在，需要做转换

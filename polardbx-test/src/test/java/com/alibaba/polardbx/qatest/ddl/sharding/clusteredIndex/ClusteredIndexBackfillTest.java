@@ -27,8 +27,8 @@ import com.alibaba.polardbx.qatest.util.JdbcUtil;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import org.apache.calcite.util.Pair;
-import org.apache.commons.lang.RandomStringUtils;
-import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -197,9 +197,9 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
         inserts.add(launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> 1000));
         inserts.add(launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> 1000));
         inserts.add(
-            launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> RandomUtils.nextInt(2000)));
+            launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> RandomUtils.nextInt(0,2000)));
         inserts.add(
-            launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> RandomUtils.nextInt(2000)));
+            launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> RandomUtils.nextInt(0,2000)));
 
         try {
             TimeUnit.SECONDS.sleep(1);
@@ -241,9 +241,9 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
         inserts.add(launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> 1000));
         inserts.add(launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> 1000));
         inserts.add(
-            launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> RandomUtils.nextInt(2000)));
+            launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> RandomUtils.nextInt(0,2000)));
         inserts.add(
-            launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> RandomUtils.nextInt(2000)));
+            launchInsertThread(sqlInsert, stop, () -> pkGen.getAndIncrement() % 8, () -> RandomUtils.nextInt(0,2000)));
 
         try {
             TimeUnit.SECONDS.sleep(10);
@@ -350,8 +350,8 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
         final List<Future> inserts = new ArrayList<>();
         inserts.add(launchInsertThread(sqlInsert, stop, () -> null, () -> 1000));
         inserts.add(launchInsertThread(sqlInsert, stop, () -> 1L, () -> 1000));
-        inserts.add(launchInsertThread(sqlInsert, stop, () -> 3L, () -> RandomUtils.nextInt(2000)));
-        inserts.add(launchInsertThread(sqlInsert, stop, () -> 5L, () -> RandomUtils.nextInt(2000)));
+        inserts.add(launchInsertThread(sqlInsert, stop, () -> 3L, () -> RandomUtils.nextInt(0,2000)));
+        inserts.add(launchInsertThread(sqlInsert, stop, () -> 5L, () -> RandomUtils.nextInt(0,2000)));
 
         try {
             TimeUnit.SECONDS.sleep(1);
@@ -388,7 +388,7 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
 
         final AtomicBoolean stop = new AtomicBoolean(false);
         final List<Future> inserts = new ArrayList<>();
-        inserts.add(launchInsertThread(sqlInsert, stop, RandomUtils::nextLong, () -> RandomUtils.nextInt(2000)));
+        inserts.add(launchInsertThread(sqlInsert, stop, RandomUtils::nextLong, () -> RandomUtils.nextInt(0,2000)));
         inserts.add(launchInsertSelectThread(sqlInsertSelect, stop));
         inserts.add(launchInsertSelectThread(sqlInsertSelect, stop));
         inserts.add(launchInsertSelectThread(sqlInsertSelect, stop));
@@ -428,7 +428,7 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
         final AtomicBoolean stop = new AtomicBoolean(false);
         final List<Future> inserts = new ArrayList<>();
         final Supplier<String> pkGen = () -> RandomStringUtils.randomAlphabetic(32);
-        final Supplier<Integer> batchGen = () -> RandomUtils.nextInt(20);
+        final Supplier<Integer> batchGen = () -> RandomUtils.nextInt(0,20);
 
         inserts.add(launchInsertThread2(sqlInsert, stop, pkGen, () -> null, () -> 10, ignoreDuplicate));
         inserts.add(launchInsertThread2(sqlInsert, stop, pkGen, () -> 3L, batchGen, ignoreDuplicate));
@@ -453,7 +453,7 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
         inserts.clear();
 
         inserts.add(
-            launchInsertThread2(sqlInsert, stop, pkGen, () -> null, () -> RandomUtils.nextInt(20), ignoreDuplicate));
+            launchInsertThread2(sqlInsert, stop, pkGen, () -> null, () -> RandomUtils.nextInt(0,20), ignoreDuplicate));
 
         final String sqlCreateGsi = MessageFormat.format(CREATE_GSI_TMPL, INDEX_NAME, PRIMARY_TABLE_NAME);
         JdbcUtil.executeUpdateSuccess(tddlConnection, HINT + sqlCreateGsi);
@@ -487,7 +487,7 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
         final Random random = new Random(System.currentTimeMillis());
         // 按照主键升序插入，避免死锁
         final Supplier<Pair<Long, Long>> pkGen = () -> Pair.of(pk.getAndIncrement(),
-            Math.abs(RandomUtils.nextLong(random)) % 100000);
+            Math.abs(RandomUtils.nextLong(0L,random.nextLong())) % 100000);
 
         final List<Future> inserts = new ArrayList<>();
         inserts.add(launchInsertThread1(sqlInsert, stop, pkGen, () -> null, () -> 1000, ignoreDuplicate, true));
@@ -531,8 +531,8 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
 
         // 并发插入随机主键，大概率出现死锁
         final Random random = new Random(System.currentTimeMillis());
-        final Supplier<Pair<Long, Long>> pkGen = () -> Pair.of(Math.abs(RandomUtils.nextLong(random)) % 100000,
-            Math.abs(RandomUtils.nextLong(random)) % 100000);
+        final Supplier<Pair<Long, Long>> pkGen = () -> Pair.of(Math.abs(RandomUtils.nextLong(0L,random.nextLong())) % 100000,
+            Math.abs(RandomUtils.nextLong(0L,random.nextLong())) % 100000);
 
         final List<Future> inserts = new ArrayList<>();
         // 小 batch 插入，降低死锁数量
@@ -618,7 +618,7 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
 
         // 并发插入随机主键，大概率出现死锁
         final Random random = new Random(System.currentTimeMillis());
-        final Supplier<Pair<Long, String>> pkGen = () -> Pair.of(Math.abs(RandomUtils.nextLong(random)) % 100000,
+        final Supplier<Pair<Long, String>> pkGen = () -> Pair.of(Math.abs(RandomUtils.nextLong(0,random.nextLong())) % 100000,
             RandomStringUtils.randomAlphabetic(32));
 
         final List<Future> inserts = new ArrayList<>();
@@ -663,7 +663,7 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
         // 并发插入随机主键，大概率出现死锁
         final Random random = new Random(System.currentTimeMillis());
         final Supplier<Pair<String, Long>> pkGen = () -> Pair.of(RandomStringUtils.randomAlphabetic(32),
-            Math.abs(RandomUtils.nextLong(random)) % 100000);
+            Math.abs(RandomUtils.nextLong(0L,random.nextLong())) % 100000);
 
         final List<Future> inserts = new ArrayList<>();
         // 小 batch 插入，降低死锁数量
@@ -768,8 +768,8 @@ public class ClusteredIndexBackfillTest extends DDLBaseNewDBTestCase {
         final List<Future> inserts = new ArrayList<>();
         inserts.add(launchInsertThread(sqlInsert, stop, () -> null, () -> 1000));
         inserts.add(launchInsertThread(sqlInsert, stop, () -> 1L, () -> 1000));
-        inserts.add(launchInsertThread(sqlInsert, stop, () -> 3L, () -> RandomUtils.nextInt(2000)));
-        inserts.add(launchInsertThread(sqlInsert, stop, () -> 5L, () -> RandomUtils.nextInt(2000)));
+        inserts.add(launchInsertThread(sqlInsert, stop, () -> 3L, () -> RandomUtils.nextInt(0,2000)));
+        inserts.add(launchInsertThread(sqlInsert, stop, () -> 5L, () -> RandomUtils.nextInt(0,2000)));
 
         try {
             TimeUnit.SECONDS.sleep(1);

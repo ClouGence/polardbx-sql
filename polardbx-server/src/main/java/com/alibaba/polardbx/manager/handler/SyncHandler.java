@@ -43,7 +43,7 @@ import com.alibaba.polardbx.net.packet.OkPacket;
 import com.alibaba.polardbx.optimizer.OptimizerContext;
 import com.alibaba.polardbx.server.executor.utils.ResultSetUtil;
 import com.alibaba.polardbx.server.response.privileges.AbstractAuthorizeSyncAction;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.ResultSet;
 import java.util.concurrent.atomic.AtomicLong;

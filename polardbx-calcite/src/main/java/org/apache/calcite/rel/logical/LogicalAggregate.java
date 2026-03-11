@@ -28,7 +28,7 @@ import org.apache.calcite.rel.core.AggregateCall;
 import org.apache.calcite.rel.externalize.RelDrdsWriter;
 import org.apache.calcite.rel.externalize.RexExplainVisitor;
 import org.apache.calcite.util.ImmutableBitSet;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;

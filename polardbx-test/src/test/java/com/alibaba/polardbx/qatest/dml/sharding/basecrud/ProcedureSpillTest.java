@@ -5,7 +5,7 @@ import com.alibaba.polardbx.common.utils.Assert;
 import com.alibaba.polardbx.qatest.AutoReadBaseTestCase;
 import com.alibaba.polardbx.qatest.data.ExecuteTableSelect;
 import com.alibaba.polardbx.qatest.util.JdbcUtil;
-import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runners.Parameterized;
@@ -114,7 +114,7 @@ public class ProcedureSpillTest extends AutoReadBaseTestCase {
         JdbcUtil.executeSuccess(tddlConnection,
             "set PL_CURSOR_MEMORY_LIMIT = " + (spill ? 20 : ConnectionParams.PL_CURSOR_MEMORY_LIMIT.getDefault()));
         for (int i = 0; i < 50; ++i) {
-            int random = RandomUtils.nextInt((int) count);
+            int random = RandomUtils.nextInt(0, (int) count);
             JdbcUtil.executeSuccess(tddlConnection, String.format("call %s(%s, %s)", PROCEDURE_NAME, count, random));
             checkUserVar("check", 1, tddlConnection);
             checkUserVar("count", count, tddlConnection);

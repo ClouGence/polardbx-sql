@@ -52,8 +52,8 @@ import org.apache.calcite.rel.RelNode;
 import org.apache.calcite.sql.OptimizerHint;
 import org.apache.calcite.sql.SqlSelect;
 import org.apache.commons.collections.CollectionUtils;
-import org.apache.commons.lang.StringEscapeUtils;
-import org.apache.commons.lang.math.RandomUtils;
+import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.lang3.RandomUtils;
 import org.jetbrains.annotations.NotNull;
 
 import java.math.BigDecimal;

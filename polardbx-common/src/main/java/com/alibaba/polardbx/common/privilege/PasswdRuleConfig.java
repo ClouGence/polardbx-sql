@@ -18,7 +18,7 @@ package com.alibaba.polardbx.common.privilege;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.annotations.VisibleForTesting;
-import org.apache.commons.lang.BooleanUtils;
+import org.apache.commons.lang3.BooleanUtils;
 
 import java.util.LinkedHashSet;
 import java.util.Set;

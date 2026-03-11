@@ -16,9 +16,7 @@
 
 package com.alibaba.polardbx.optimizer.core.datatype;
 
-import org.apache.commons.lang.exception.NestableRuntimeException;
-
-public class CorruptEncodingException extends NestableRuntimeException {
+public class CorruptEncodingException extends RuntimeException {
 
     private static final long serialVersionUID = -7798002309588878953L;
 

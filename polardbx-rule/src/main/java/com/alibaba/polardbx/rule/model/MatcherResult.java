@@ -19,10 +19,9 @@ package com.alibaba.polardbx.rule.model;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-
 import com.alibaba.polardbx.common.model.sqljep.Comparative;
 import com.taobao.tddl.common.utils.TddlToStringStyle;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
  * 匹配结果对象

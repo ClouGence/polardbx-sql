@@ -25,7 +25,7 @@ import com.alibaba.polardbx.optimizer.context.ExecutionContext;
 import com.alibaba.polardbx.optimizer.view.InformationSchemaPolardbxTrx;
 import com.alibaba.polardbx.optimizer.view.InformationSchemaPreparedTrxBranch;
 import com.alibaba.polardbx.optimizer.view.VirtualView;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

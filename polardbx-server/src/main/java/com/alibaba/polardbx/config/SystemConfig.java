@@ -31,9 +31,9 @@ import com.alibaba.polardbx.gms.topology.DbTopologyManager;
 import com.alibaba.polardbx.instance.InstanceType;
 import com.alibaba.polardbx.optimizer.memory.MemorySetting;
 import com.taobao.tddl.common.utils.TddlToStringStyle;
-import org.apache.commons.lang.ObjectUtils;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang3.ObjectUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

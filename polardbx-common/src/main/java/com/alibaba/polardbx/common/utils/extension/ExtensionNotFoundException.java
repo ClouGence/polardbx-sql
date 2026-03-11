@@ -16,9 +16,7 @@
 
 package com.alibaba.polardbx.common.utils.extension;
 
-import org.apache.commons.lang.exception.NestableRuntimeException;
-
-public class ExtensionNotFoundException extends NestableRuntimeException {
+public class ExtensionNotFoundException extends RuntimeException {
 
     private static final long serialVersionUID = -654893533794556357L;
 

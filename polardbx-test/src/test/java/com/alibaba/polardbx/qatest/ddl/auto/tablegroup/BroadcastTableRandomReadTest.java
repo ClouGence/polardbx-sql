@@ -5,7 +5,7 @@ import com.alibaba.polardbx.qatest.ddl.datamigration.locality.LocalityTestBase;
 import com.alibaba.polardbx.qatest.ddl.datamigration.locality.LocalityTestCaseUtils.LocalityTestUtils;
 import com.alibaba.polardbx.qatest.util.JdbcUtil;
 import net.jcip.annotations.NotThreadSafe;
-import org.apache.commons.lang.BooleanUtils;
+import org.apache.commons.lang3.BooleanUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

@@ -54,7 +54,7 @@ import org.apache.calcite.rel.core.TableModify;
 import org.apache.calcite.rex.RexDynamicParam;
 import org.apache.calcite.sql.SqlNode;
 import org.apache.calcite.util.Util;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;

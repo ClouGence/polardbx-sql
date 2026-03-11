@@ -177,7 +177,7 @@ public class LocalityInfoUtils {
                 allowedGroupInfo.get(partition).stream().map(o -> o.storageInstId).collect(Collectors.toList());
             LocalityDesc allowedPartitionGroupLocality = LocalityDesc.parse(
                 LocalityDesc.DN_PREFIX +
-                    org.apache.commons.lang.StringUtils.join(allowedPartitionGroupDns, ","));
+                    org.apache.commons.lang3.StringUtils.join(allowedPartitionGroupDns, ","));
             if (!checkAction.checkPartition(partition, allowedPartitionGroupLocality)) {
                 throw new TddlRuntimeException(ErrorCode.ERR_GMS_CHECK_ARGUMENTS,
                     String.format("alter tablegroup operation not compatebale with partition [%s].[%s] locality ",

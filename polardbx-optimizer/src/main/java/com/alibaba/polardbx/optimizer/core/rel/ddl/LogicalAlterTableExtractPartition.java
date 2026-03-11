@@ -95,12 +95,12 @@ public class LogicalAlterTableExtractPartition extends BaseDdlOperation {
         SqlAlterTableExtractPartition sqlAlterTableExtractPartitionByHotValue =
             (SqlAlterTableExtractPartition) sqlAlterTable.getAlters().get(0);
 
-        String hotKeyPartName = org.apache.commons.lang.StringUtils.EMPTY;
+        String hotKeyPartName = org.apache.commons.lang3.StringUtils.EMPTY;
         if (sqlAlterTableExtractPartitionByHotValue.getHotKeyPartitionName() != null) {
             hotKeyPartName =
                 SQLUtils.normalizeNoTrim(sqlAlterTableExtractPartitionByHotValue.getHotKeyPartitionName().toString());
         }
-        boolean ignoreNameAndLocality = org.apache.commons.lang.StringUtils.isEmpty(hotKeyPartName);
+        boolean ignoreNameAndLocality = org.apache.commons.lang3.StringUtils.isEmpty(hotKeyPartName);
 
         String logicalTableName = Util.last(((SqlIdentifier) alterTable.getTableName()).names);
         PartitionInfo partitionInfo =

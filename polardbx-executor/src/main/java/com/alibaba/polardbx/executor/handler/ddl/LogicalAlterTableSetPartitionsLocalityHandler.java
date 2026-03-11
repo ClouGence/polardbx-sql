@@ -44,7 +44,7 @@ import com.alibaba.polardbx.optimizer.core.rel.ddl.LogicalAlterTableGroupSetPart
 import org.apache.calcite.rel.RelNode;
 import org.apache.calcite.sql.SqlAlterTableGroup;
 import org.apache.calcite.sql.SqlAlterTableGroupSetPartitionsLocality;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

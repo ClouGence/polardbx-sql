@@ -20,7 +20,7 @@ import com.alibaba.polardbx.common.utils.time.old.DateUtils;
 import com.alibaba.polardbx.optimizer.config.table.statistic.inf.StatisticResultSource;
 import com.google.common.collect.Lists;
 import org.apache.calcite.avatica.util.Spaces;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.PrintWriter;

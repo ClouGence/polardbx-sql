@@ -39,7 +39,7 @@ import com.alibaba.polardbx.gms.topology.SystemDbHelper;
 import com.alibaba.polardbx.optimizer.biv.MockConnection;
 import com.alibaba.polardbx.rpc.compatible.XDataSource;
 import com.alibaba.polardbx.rpc.pool.XConnection;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.sql.DataSource;
 import java.sql.Array;

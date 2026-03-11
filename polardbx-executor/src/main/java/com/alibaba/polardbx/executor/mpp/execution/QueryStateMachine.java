@@ -43,7 +43,7 @@ import com.google.common.base.Ticker;
 import com.google.common.collect.ImmutableList;
 import com.google.common.util.concurrent.SettableFuture;
 import io.airlift.units.Duration;
-import org.apache.commons.lang.exception.ExceptionUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.joda.time.DateTime;
 
 import javax.annotation.concurrent.ThreadSafe;
@@ -378,7 +378,7 @@ public class QueryStateMachine implements StateMachineBase<QueryState> {
         boolean failed = queryState.setIf(FAILED, currentState -> !currentState.isDone());
         if (failed) {
             log.error(queryId + ": the sql is " + query + " , and it has error: " +
-                ExceptionUtils.getFullStackTrace(throwable));
+                ExceptionUtils.getStackTrace(throwable));
         }
         return failed;
     }

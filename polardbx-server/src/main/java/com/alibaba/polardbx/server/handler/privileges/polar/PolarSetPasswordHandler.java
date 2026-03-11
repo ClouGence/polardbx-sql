@@ -39,7 +39,7 @@ import com.alibaba.polardbx.gms.privilege.PolarPrivManager;
 import com.alibaba.polardbx.gms.privilege.audit.AuditPrivilege;
 import com.alibaba.polardbx.optimizer.parse.FastsqlUtils;
 import org.apache.calcite.sql.SqlKind;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.sql.SQLSyntaxErrorException;
 import java.util.ArrayList;

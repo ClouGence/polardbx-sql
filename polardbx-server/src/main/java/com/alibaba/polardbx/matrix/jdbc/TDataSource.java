@@ -56,7 +56,7 @@ import com.alibaba.polardbx.stats.MatrixStatistics;
 import com.alibaba.polardbx.transaction.TransactionManager;
 import com.alibaba.polardbx.transaction.utils.ParamValidationUtils;
 import com.google.common.collect.Maps;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.ByteArrayInputStream;
 import java.io.UnsupportedEncodingException;

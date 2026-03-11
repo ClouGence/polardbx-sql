@@ -22,7 +22,7 @@ import com.alibaba.polardbx.gms.ha.impl.StorageRole;
 import com.alibaba.polardbx.qatest.BaseTestCase;
 import com.alibaba.polardbx.qatest.util.JdbcUtil;
 import lombok.Value;
-import org.apache.commons.lang.BooleanUtils;
+import org.apache.commons.lang3.BooleanUtils;
 import org.junit.Assert;
 import org.junit.Before;
 

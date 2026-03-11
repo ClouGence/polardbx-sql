@@ -39,7 +39,7 @@ import com.alibaba.polardbx.common.model.lifecycle.Lifecycle;
 import com.alibaba.polardbx.common.utils.TStringUtil;
 import com.alibaba.polardbx.common.utils.logger.Logger;
 import com.alibaba.polardbx.common.utils.logger.LoggerFactory;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * 账号和权限相关配置, 目前只能用于DRDS模式下. 需要保证线程安全, 由于账号和授权并不是一个高频场景, 锁的粒度比较粗.

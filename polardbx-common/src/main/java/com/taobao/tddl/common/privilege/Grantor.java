@@ -17,7 +17,7 @@
 package com.taobao.tddl.common.privilege;
 
 import com.alibaba.polardbx.common.privilege.PrivilegeUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.Serializable;
 import java.text.MessageFormat;

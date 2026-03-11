@@ -131,7 +131,7 @@ import org.apache.calcite.util.Pair;
 import org.apache.calcite.util.trace.RuntimeStatisticsSketch;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.MapUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;

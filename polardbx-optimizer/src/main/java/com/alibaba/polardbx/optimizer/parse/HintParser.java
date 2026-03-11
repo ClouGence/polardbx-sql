@@ -25,7 +25,7 @@ import com.alibaba.polardbx.optimizer.exception.SqlParserException;
 import com.alibaba.polardbx.optimizer.parse.mysql.lexer.MySQLLexer;
 import com.alibaba.polardbx.optimizer.parse.mysql.lexer.MySQLToken;
 import com.alibaba.polardbx.optimizer.parse.util.CharTypes;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.nio.ByteBuffer;
 import java.sql.SQLSyntaxErrorException;

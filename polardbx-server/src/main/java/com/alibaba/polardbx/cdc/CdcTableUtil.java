@@ -37,7 +37,7 @@ import com.alibaba.polardbx.server.conn.InnerConnection;
 import com.alibaba.polardbx.server.conn.InnerTransManager;
 import com.alibaba.polardbx.server.util.SysTableUtil;
 import lombok.SneakyThrows;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
 import java.sql.Connection;

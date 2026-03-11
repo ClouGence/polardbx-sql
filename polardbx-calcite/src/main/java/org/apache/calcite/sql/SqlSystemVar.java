@@ -19,7 +19,7 @@ package org.apache.calcite.sql;
 import com.google.common.base.Preconditions;
 import org.apache.calcite.sql.parser.SqlParserPos;
 import org.apache.calcite.sql.type.SqlTypeName;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * @author chenmo.cm

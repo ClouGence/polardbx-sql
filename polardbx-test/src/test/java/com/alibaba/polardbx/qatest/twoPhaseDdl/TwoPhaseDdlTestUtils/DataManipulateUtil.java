@@ -5,7 +5,7 @@ import com.alibaba.polardbx.qatest.ddl.datamigration.balancer.datagenerator.Data
 import com.alibaba.polardbx.qatest.ddl.datamigration.balancer.datagenerator.UniformDistributionDataGenerator;
 import com.alibaba.polardbx.qatest.util.ConnectionManager;
 import com.alibaba.polardbx.qatest.util.JdbcUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 

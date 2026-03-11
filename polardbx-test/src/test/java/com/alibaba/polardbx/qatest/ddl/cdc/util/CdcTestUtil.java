@@ -25,7 +25,7 @@ public class CdcTestUtil {
     public static void removeDdlIdComments(SQLStatement stmt) {
         String searchSeed = "/*DDL_ID";
         if (stmt.hasBeforeComment()) {
-            stmt.getBeforeCommentsDirect().removeIf(c -> org.apache.commons.lang.StringUtils.contains(c, searchSeed));
+            stmt.getBeforeCommentsDirect().removeIf(c -> org.apache.commons.lang3.StringUtils.contains(c, searchSeed));
         }
 
         if (stmt.getHeadHintsDirect() != null) {
@@ -34,7 +34,7 @@ public class CdcTestUtil {
                     TDDLHint tddlHint = (TDDLHint) hint;
                     if (tddlHint.hasBeforeComment()) {
                         tddlHint.getBeforeCommentsDirect()
-                            .removeIf(c -> org.apache.commons.lang.StringUtils.contains(c, searchSeed));
+                            .removeIf(c -> org.apache.commons.lang3.StringUtils.contains(c, searchSeed));
                     }
                 }
             });
