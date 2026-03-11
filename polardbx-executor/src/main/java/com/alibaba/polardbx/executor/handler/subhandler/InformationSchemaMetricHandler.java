@@ -13,7 +13,7 @@ import com.alibaba.polardbx.optimizer.view.VirtualView;
 import com.alibaba.polardbx.stats.metric.FeatureStats;
 import com.alibaba.polardbx.stats.metric.FeatureStatsItem;
 import com.google.common.collect.Maps;
-import jdk.nashorn.internal.runtime.QuotedStringTokenizer;
+import org.eclipse.jetty.util.QuotedStringTokenizer;
 
 import java.util.List;
 import java.util.Map;

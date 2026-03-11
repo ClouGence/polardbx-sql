@@ -16,7 +16,6 @@
 
 package com.alibaba.polardbx.common.encdb.cipher;
 
-import com.sun.crypto.provider.SunJCE;
 import org.bouncycastle.crypto.CryptoException;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
@@ -44,7 +43,7 @@ public class SymCrypto {
     public static final int CTRIVLength = 16;
 
     static {
-        Provider sunJceProvider = new SunJCE();
+        Provider sunJceProvider = Security.getProvider("SunJCE");
         if (Security.getProvider(sunJceProvider.getName()) == null) {
             Security.addProvider(sunJceProvider);
         }

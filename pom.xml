@@ -32,28 +32,14 @@
         </license>
     </licenses>
 
-
-    <repositories>
-        <repository>
-            <id>java.net</id>
-            <url>https://download.java.net/maven/2/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--maven properties -->
         <maven.test.skip>false</maven.test.skip>
         <downloadSources>true</downloadSources>
         <!-- compiler settings properties -->
-        <java_source_version>1.8</java_source_version>
-        <java_target_version>1.8</java_target_version>
+        <java_source_version>17</java_source_version>
+        <java_target_version>17</java_target_version>
         <file_encoding>UTF-8</file_encoding>
         <!-- Version -->
         <polardbx.version>5.4.19</polardbx.version>
@@ -66,8 +52,8 @@
         <mysql_connector_version>5.1.49</mysql_connector_version>
         <!-- Test libs -->
         <junit_version>4.12</junit_version>
-        <lombok.version>1.18.10</lombok.version>
-        <jackson.version>2.13.1</jackson.version>
+        <lombok.version>1.18.30</lombok.version>
+        <jackson.version>2.13.3</jackson.version>
 
         <open.jdk.version>0.2</open.jdk.version>
         <sigar.version>1.6.4</sigar.version>
@@ -702,7 +688,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.8.1</version>
                 <configuration>
                     <excludes>
                         <skip>!${codegen.compile.skip}</skip>

@@ -10,7 +10,6 @@ import com.alibaba.polardbx.optimizer.config.table.TableMeta;
 import com.alibaba.polardbx.optimizer.context.ExecutionContext;
 import com.alibaba.polardbx.optimizer.core.planner.SqlConverter;
 import com.alibaba.polardbx.planner.common.BasePlannerTest;
-import com.sun.tools.javac.util.List;
 import org.apache.calcite.plan.RelOptCluster;
 import org.apache.calcite.plan.RelOptSchema;
 import org.jetbrains.annotations.NotNull;
@@ -20,6 +19,7 @@ import org.mockito.MockedStatic;
 
 import java.sql.SQLSyntaxErrorException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static com.alibaba.polardbx.common.utils.Assert.assertTrue;

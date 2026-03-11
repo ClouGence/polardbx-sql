@@ -79,18 +79,16 @@ public abstract class AbstractCharsetHandler implements CharsetHandler {
         } else if (unicodeChars.isEmpty()) {
             return Slices.EMPTY_SLICE;
         }
-
         CharBuffer charBuffer = CharBuffer.wrap(unicodeChars);
 
         // For un-mappable characters, throw error.
         CharsetEncoder encoder = charset.newEncoder();
         ByteBuffer buffer = encoder.encode(charBuffer);
-
         if (!buffer.hasRemaining()) {
             return Slices.EMPTY_SLICE;
         }
-
-        return Slices.wrappedBuffer(buffer);
+        // an empty byte buffer will cause the RUNTIME EXCEPTION.
+        return Slices.wrappedBuffer(buffer.get());
     }
 
     @Override

@@ -1,8 +1,8 @@
 package com.alibaba.polardbx.executor.statistics;
 
+import com.alibaba.polardbx.common.utils.Assert;
 import com.alibaba.polardbx.executor.statistic.ndv.NDVShardSketch;
 import com.alibaba.polardbx.gms.config.impl.MetaDbInstConfigManager;
-import com.sun.tools.javac.util.Assert;
 import org.junit.Test;
 
 public class HllTest {

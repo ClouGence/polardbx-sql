@@ -18,17 +18,17 @@ package com.alibaba.polardbx.common.utils.logger.logback;
 
 import ch.qos.logback.core.Context;
 import ch.qos.logback.core.recovery.RecoveryCoordinator;
-import ch.qos.logback.core.recovery.ResilientOutputStreamBase;
 import ch.qos.logback.core.status.ErrorStatus;
 import ch.qos.logback.core.status.InfoStatus;
 import ch.qos.logback.core.status.Status;
 import ch.qos.logback.core.status.StatusManager;
-import sun.nio.ch.DirectBuffer;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.RandomAccessFile;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
@@ -285,8 +285,16 @@ public class ResilientMMPFileOutputStream extends OutputStream {
         }
 
         private static void unsafeUnmap(MappedByteBuffer mbb) {
-            ((DirectBuffer) mbb).cleaner().clean();
-            ;
+            try {
+                Method getUnmapper = MappedByteBuffer.class.getDeclaredMethod("unmapper");
+                getUnmapper.setAccessible(true);
+                Object unmapper = getUnmapper.invoke(mbb);
+
+                Method unmap = unmapper.getClass().getDeclaredMethod("unmap");
+                unmap.invoke(unmapper);
+            } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+                throw new RuntimeException("only support JDK 16+", e);
+            }
         }
 
         private static MappedByteBuffer mmap(RandomAccessFile raf, long offset, long length) throws IOException {
