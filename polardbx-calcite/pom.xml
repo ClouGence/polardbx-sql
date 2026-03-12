@@ -107,6 +107,7 @@ limitations under the License.
       <groupId>net.hydromatic</groupId>
       <artifactId>aggdesigner-algorithm</artifactId>
       <version>${aggdesigner-algorithm.version}</version>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>net.hydromatic</groupId>
